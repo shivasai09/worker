@@ -1,13 +1,8 @@
 self.onmessage = (event) => {
 
     const num = event.data;
-
     const result = fibonacci(num);
-
- 
-
-    self.postMessage(result);
-
+     self.postMessage(result);
     self.close();
 
   };
